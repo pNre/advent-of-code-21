@@ -1,0 +1,5 @@
+(executable
+ (name aoc_2021_5)
+ (libraries core)
+ (preprocess
+  (pps ppx_compare ppx_sexp_conv ppx_hash)))
