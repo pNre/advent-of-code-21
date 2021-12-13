@@ -59,12 +59,12 @@ let count_overlapping lines =
 ;;
 
 let part1 () =
-  let lines = read_input "in.txt" |> List.filter ~f:is_h_or_v_line in
+  let lines = read_input "input" |> List.filter ~f:is_h_or_v_line in
   Printf.printf "1: %d\n" (count_overlapping lines)
 ;;
 
 let part2 () =
-  let lines = read_input "in.txt" in
+  let lines = read_input "input" in
   Printf.printf "2: %d\n" (count_overlapping lines)
 ;;
 

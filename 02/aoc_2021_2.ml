@@ -33,8 +33,8 @@ let count2 cmds =
   d * h
 ;;
 
-let part1 () = "in.txt" |> read_commands |> count1 |> Printf.printf "1: %d\n"
-let part2 () = "in.txt" |> read_commands |> count2 |> Printf.printf "2: %d\n"
+let part1 () = "input" |> read_commands |> count1 |> Printf.printf "1: %d\n"
+let part2 () = "input" |> read_commands |> count2 |> Printf.printf "2: %d\n"
 
 let () =
   part1 ();

@@ -38,7 +38,7 @@ let low_points heightmap =
 ;;
 
 let part1 () =
-  let heightmap = read_heightmap "in.txt" in
+  let heightmap = read_heightmap "input" in
   heightmap
   |> low_points
   |> List.map ~f:(fun (x, y) -> heightmap.(y).(x))
@@ -70,7 +70,7 @@ let find_basin heightmap (x, y) =
 ;;
 
 let part2 () =
-  let heightmap = read_heightmap "in.txt" in
+  let heightmap = read_heightmap "input" in
   heightmap
   |> low_points
   |> List.map ~f:(fun (x, y) -> find_basin heightmap (x, y))

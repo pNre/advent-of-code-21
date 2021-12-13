@@ -43,8 +43,8 @@ let life_support diags =
   fold ( >= ) diags * fold ( < ) diags
 ;;
 
-let part1 () = "in.txt" |> read_diag |> power_consumption |> Printf.printf "1: %d\n"
-let part2 () = "in.txt" |> read_diag |> life_support |> Printf.printf "2: %d\n"
+let part1 () = "input" |> read_diag |> power_consumption |> Printf.printf "1: %d\n"
+let part2 () = "input" |> read_diag |> life_support |> Printf.printf "2: %d\n"
 
 let () =
   part1 ();

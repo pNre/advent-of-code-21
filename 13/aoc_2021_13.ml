@@ -50,7 +50,7 @@ let vfold points ~fold_point ~width =
 ;;
 
 let part1 () =
-  let points, folds = read_manual "in.txt" in
+  let points, folds = read_manual "input" in
   let first_fold = List.hd_exn folds in
   let width, height = size_of_paper points in
   let folded =
@@ -66,7 +66,7 @@ let part1 () =
 ;;
 
 let part2 () =
-  let points, folds = read_manual "in.txt" in
+  let points, folds = read_manual "input" in
   let width, height = size_of_paper points in
   let folded, width, height =
     List.fold folds ~init:(points, width, height) ~f:(fun (points, width, height) fold ->

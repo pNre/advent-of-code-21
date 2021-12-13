@@ -35,7 +35,7 @@ let points_of_close_token = function
 ;;
 
 let part1 () =
-  let navigation_subsystem = read_nav "in.txt" in
+  let navigation_subsystem = read_nav "input" in
   navigation_subsystem
   |> List.map ~f:(fun line ->
          let stack = Stack.create () in
@@ -56,7 +56,7 @@ let part1 () =
 ;;
 
 let part2 () =
-  let navigation_subsystem = read_nav "in.txt" in
+  let navigation_subsystem = read_nav "input" in
   let scores =
     navigation_subsystem
     |> List.filter_map ~f:(fun line ->

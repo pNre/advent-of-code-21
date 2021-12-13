@@ -49,12 +49,12 @@ let count_distinct_paths caves can_visit_small_caves_twice =
 ;;
 
 let part1 () =
-  let caves = read_paths "in.txt" in
+  let caves = read_paths "input" in
   Printf.printf "1: %d\n" (count_distinct_paths caves false)
 ;;
 
 let part2 () =
-  let caves = read_paths "in.txt" in
+  let caves = read_paths "input" in
   Printf.printf "2: %d\n" (count_distinct_paths caves true)
 ;;
 

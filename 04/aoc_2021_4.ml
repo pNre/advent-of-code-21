@@ -82,12 +82,12 @@ let last_to_win draw boards =
 ;;
 
 let part1 () =
-  let draw, boards = read_input "in.txt" in
+  let draw, boards = read_input "input" in
   winning_score draw boards |> Printf.printf "1: %d\n"
 ;;
 
 let part2 () =
-  let draw, boards = read_input "in.txt" in
+  let draw, boards = read_input "input" in
   last_to_win draw boards |> Printf.printf "2: %d\n"
 ;;
 

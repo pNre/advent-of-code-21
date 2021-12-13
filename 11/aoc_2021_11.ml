@@ -36,7 +36,7 @@ let find_flashing_offsets =
 ;;
 
 let solve steps =
-  let energy_levels = read_energy_levels "in.txt" in
+  let energy_levels = read_energy_levels "input" in
   let height = List.length energy_levels
   and width = List.length (List.hd_exn energy_levels) in
   let rec count_flashes levels steps step count =

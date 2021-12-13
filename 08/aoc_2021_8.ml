@@ -17,7 +17,7 @@ let read_digits file =
 ;;
 
 let part1 () =
-  let _, outputs = read_digits "in.txt" in
+  let _, outputs = read_digits "input" in
   let easy_count =
     outputs
     |> List.join
@@ -95,7 +95,7 @@ let map_patterns_to_digits patterns =
 ;;
 
 let part2 () =
-  let patterns, outputs = read_digits "in.txt" in
+  let patterns, outputs = read_digits "input" in
   let patterns_and_outputs = List.zip_exn patterns outputs in
   let result =
     List.fold patterns_and_outputs ~init:0 ~f:(fun sum (patterns, outputs) ->

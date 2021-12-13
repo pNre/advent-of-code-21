@@ -31,12 +31,12 @@ let fuel2 crab_positions =
 ;;
 
 let part1 () =
-  let positions = read_positions "in.txt" in
+  let positions = read_positions "input" in
   Printf.printf "1: %d\n" (fuel1 positions)
 ;;
 
 let part2 () =
-  let positions = read_positions "in.txt" in
+  let positions = read_positions "input" in
   Printf.printf "2: %d\n" (fuel2 positions)
 ;;
 

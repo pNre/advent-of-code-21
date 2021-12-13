@@ -28,13 +28,13 @@ let sim ages days =
 ;;
 
 let part1 () =
-  let ages = read_ages "in.txt" in
+  let ages = read_ages "input" in
   let count = sim ages 80 in
   Printf.printf "1: %d\n" count
 ;;
 
 let part2 () =
-  let ages = read_ages "in.txt" in
+  let ages = read_ages "input" in
   let count = sim ages 256 in
   Printf.printf "2: %d\n" count
 ;;
