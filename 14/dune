@@ -1,0 +1,3 @@
+(executable
+ (name aoc_2021_14)
+ (libraries core))
