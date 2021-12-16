@@ -1,0 +1,5 @@
+(executable
+ (name aoc_2021_16)
+ (libraries core bitstring)
+ (preprocess
+  (pps ppx_bitstring)))
